@@ -1,0 +1,101 @@
+.text--article {
+	&__title {
+		font-family: $font-family--secondary;
+	}
+	&__body {
+		margin-bottom: .3em;
+	}
+}
+
+.text--passage {
+	margin: 0 auto 2em;
+	padding: 0 5%;
+	max-width: 850px;
+	width: 90%;
+	h3 {
+
+	}
+	p {
+		color: #fff;		
+		font-size: 1.5em;
+		font-weight: 300;		
+		line-height: 1.5;
+	}
+}
+
+.text--description {
+	margin: 0 auto 2em;
+	padding: 0 5%;
+	max-width: 750px;
+	text-align: center;
+	width: 90%;
+	p {
+		font-size: 1.1em;
+	}
+}
+
+.text--poster {
+	font-size: 1rem;
+	margin: 0 auto;
+	width: 100%;
+/* 	@include mq(small) {
+
+	} */
+	&__title {
+		font-size: 1.7em;
+		margin-bottom: .1em;
+	}
+	&__body {
+		font-size: 1.2em;
+		font-weight: 300;
+		line-height: 2;		
+	}
+}
+
+.text--tagline {
+	text-align: center;
+	&__body {
+		display: inline-block;
+		font-size: 35px;
+		color: #FFFFFF;
+		line-height: 60px;				
+		span {
+			font-size: 1.3em;
+			// font-size: 53px;
+			color: #9BF9F5;
+			line-height: 62px;
+		}
+	}
+}
+
+.quote {
+	&__body {
+		color: #fff;
+		font-family: "pt-serif";
+		font-size: 2.3rem;
+		font-style: italic;
+		max-width: 720px;
+		margin: 0 auto;
+		text-align: center;
+		width: 90%;	
+	}
+	@include mq(small-and-medium) {
+		margin-bottom: 2em;
+	}
+	@include e(img) {
+		margin: 0 auto 1em;
+	}
+	@include e(paragraph) {
+		font-size: 1.6em;
+		font-weight: 300;
+		margin: 0 0 .7em;		
+	}
+	@include e(author) {
+		color: $color-primary;
+		font-size: 1.2em;
+		font-weight: $font-weight--bold;		
+	}	
+}
+
+
+

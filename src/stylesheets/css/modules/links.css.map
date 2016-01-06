@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "links.css",
+	"sources": [
+		"../../scss/modules/links.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,gBAAgB,CAAC;EAChB,SAAS,EAAE,IAAK;EAChB,OAAO,EAAE,YAAa;EACtB,MAAM,EAAE,UAAW;EACnB,KAAK,EAAE,IAAK;CAJK;;AAOlB,gBAAgB,CAAC;EAChB,SAAS,EAAE,IAAK;CADC",
+	"names": []
+}

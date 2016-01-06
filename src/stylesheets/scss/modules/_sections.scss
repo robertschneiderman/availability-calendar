@@ -1,0 +1,11 @@
+.sec {
+	@include m(small) {
+		padding: 60px 0;
+	}	
+	@include m(medium) {
+		padding: 90px 0;
+	}
+	@include m(large) {
+		padding: 120px 0;
+	}
+}

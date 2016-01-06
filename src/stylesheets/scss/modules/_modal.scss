@@ -1,0 +1,35 @@
+.modal {
+	background-color: #F5F5F5;
+	border-top: 7px solid $color-primary;	
+	border-radius: $br--default;
+	left: 50%;
+	opacity: 0;
+	padding: 2em 3em;
+	position: absolute;
+	top: 0%;
+	transform: translateX(-50%);
+	transition: .5s top, 1s opacity;
+	max-width: 420px;
+	width: 80%;
+	z-index: 0;
+	&.is-active {
+		opacity: 1;
+		top: 30%;
+		z-index: 10;
+	}
+	@include e(btn) {
+		cursor: pointer;
+		position: absolute;
+		right: 1em;
+		top: 1em;
+	}
+	@include e(content) {
+		@include e(heading) {
+			@extend %text-style-1__heading;
+			margin-bottom: .2em;
+		}
+		@include e(body) {
+			@extend %text-style-1__body;	
+		}		
+	}
+}

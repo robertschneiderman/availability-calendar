@@ -1,0 +1,87 @@
+// section, .section {
+// 	@include mq(small) {
+// 		padding-left: $sm-pd;
+// 		padding-right: $sm-pd;
+// 	}
+// 	@include mq(medium) {
+// 		padding-left: $md-pd;
+// 		padding-right: $md-pd;
+// 	}	
+// }
+
+section {
+	padding-left: 2em;
+	padding-right: 2em; 
+}
+
+.landing {
+	padding: 0em;
+	.down-arrow {
+		@include svg(306, 189, 1.3em);
+		animation: bounce 2s 5;
+		left: 48%;
+		bottom: .5em;
+		position: absolute;
+	}
+}
+
+.overview {
+	@include bgp('stripe-pattern');	
+	padding-top: 1.8em;
+	padding-bottom: 2.2em;
+}
+
+// .obstetrical-care {
+// 	@include bgi('obstetrical-care');
+// 	padding: 4em 0;	
+// }
+
+.patient-forms {
+	@include bgp('absurdidad');		
+	background-color: #FCFCF5;
+	padding-top: 1.8em;
+	padding-bottom: 1.8em;	
+}
+
+.our-philosophy {
+	@include bgi('our-philosophy', rgba(#333, .4));
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.about-us {
+	@include bgp('stripe-pattern');	
+	padding-top: 1.8em;
+	padding-bottom: 1.8em;	
+}
+
+.pay-online {
+	// @include bgi('pay-now');
+	@include bgp('stripe-pattern');		
+	padding-top: 2.7em;
+	padding-bottom: 2.7em;	
+}
+
+
+// .family-planning-services {
+// 	padding: 4em 0;	
+// 	// @include bgi('family-planning-services');
+// }
+
+.schedule-appointment {
+	background: #666C76;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.footer {
+	background: darken(#666C76, 20%);
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	p {
+		color: #fff;
+		display: inline-block;
+	}	
+}
+

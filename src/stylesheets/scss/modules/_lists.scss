@@ -1,0 +1,118 @@
+
+.tabs-list {
+	@include e(item) {
+		background-color: #fff;
+		border: 1px solid #d7d7d7;
+		display: inline-block;
+		padding: 1em;
+		&.is-active {
+			background-color: #fff;
+			border-bottom: 0;
+			// border-top: 5px solid $color-primary;
+			@include hr-linesH($q: before, $c-or-b: $color-primary, $w: 100%, $h: 4px, $p: 2px, $noJ: null);
+		}
+		&:nth-child(2) {
+			border-left: none;
+			border-right: none;
+		}
+		@include mq(medium) {
+			// padding: 0 30px;
+		}
+	}	
+}
+
+.ls {
+	// display: inline-block;
+	text-align: left;
+	font-weight: 300;
+	@include e(item) {
+		// font-size: 1.3em;
+		list-style-type: circle;
+		margin: 0 0 1em .7em;		
+		@include m(bulleted) {
+			// font-size: .9em;			
+			list-style-type: circle;
+			margin: 0 0 1em 1em;	
+		}
+		@include m(underlined) {
+			@include hr-linesH($q: after, $c-or-b: #ccc, $w: 100%, $h: 1px, $p: -1em, $noJ: null);
+			font-size: 1.3em;
+			margin-bottom: 1.8em;
+		}
+	}
+	@include m(lined) {
+		@extend %text-style-1__body;
+		text-align: left;
+		@include e(item) {
+			@include hr-linesH($q: after, $c-or-b: #ccc, $w: 100%, $h: 1px, $p: -0.7em, $noJ: null);
+			// font-size: 1.3em;
+			margin-bottom: 1.8em;	
+			&:hover {
+				a { 
+					color: $color-primary;
+				}	
+				// &:after {
+				// 	background-color: $color-primary;
+				// }
+			}		
+		}
+	}
+}
+
+.list-horizontal {
+	display: inline-block;
+	text-align: left;
+	@include e(item) {
+		@include mq(small) {	
+			display: block;		
+		}
+		@include mq(medium) {
+			display: inline-block;
+			padding: 0 30px;
+		}	
+		@include m(tab) {
+			background-color: #fff;
+			border: 1px solid #d7d7d7;
+			display: inline-block;
+			padding: 1em;
+			&.is-active {
+				background-color: #fff;
+				// border-top: 5px solid $color-primary;
+				@include hr-linesH($q: before, $c-or-b: $color-primary, $w: 100%, $h: 4px, $p: 2px, $noJ: null);
+			}
+			&:nth-child(2) {
+				border-left: none;
+				border-right: none;
+			}
+			@include mq(medium) {
+				// padding: 0 30px;
+			}
+		}					
+	}
+}
+
+@mixin list-image() {
+	@include e(image) {
+		display: inline-block;
+		margin-right: .4em;
+		vertical-align: middle;		
+		width: 1.6em;
+	}
+	@include e(title) {
+		color: #999;
+		display: inline-block;
+		font-size: 1.2em;
+		font-weight: 400;
+		vertical-align: middle;
+	}	
+}
+
+.list-img {
+	display: block;
+	text-align: left;
+	@include e(item) {
+		margin-bottom: 1.3em;
+		padding-left: 1.9em;
+		@include list-image();
+	}
+}

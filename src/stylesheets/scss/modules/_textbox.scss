@@ -1,0 +1,51 @@
+.textbox-c {
+	font-family: $font-family--secondary;
+	font-size: 1rem;
+	transition: width .2s;	
+	width: 100%;	
+}
+
+.textbox {
+	text-align: left;
+	line-height: 1.5;
+	@include mq(small) {
+		@include hc;
+		display: block;
+		font-size: .85rem;
+		margin: 0 0 2em 0;
+		width: 14em;
+		&__title {
+
+		}
+		&__body {
+
+		}
+	}
+	@include mq(medium) {
+		display: block;
+		font-size: 1rem;
+		// margin-bottom: 1em;		
+		padding: .5em 0em .5em 1em;	
+		width: 100%;		
+		&:last-child {
+			margin-right: 0;
+		}		
+		&__title {
+
+		}
+		&__body {
+			display: inline-block;
+			// vertical-align: middle;			
+			font-size: .75em;
+			width: 210px;
+		}
+	}		
+}
+
+.textbox:hover {
+	background-color: darken(#fff, 7%);
+	.btn--get-directions {
+		display: inline-block;
+	}
+}
+

@@ -1,0 +1,31 @@
+// ==========================================================================
+// Images
+// ==========================================================================
+
+.img--header {
+	display: block;
+	margin: 0 auto 2em;
+	// max-width: 200px;
+	// width: 100%;
+	@include svg(122.2, 22.2, 19em);
+}
+
+.img--logo {
+	bottom: 1em;
+	right: 3em;
+	margin: 0 auto;
+	opacity: .8;
+	position: absolute;
+	width: 10em;
+}
+
+// .svg {
+//   text-align: center;
+//   >div {
+//     display: inline-block;
+//   }
+// }
+
+// .svg {  //DOESNT BELONG
+//   width: 100%;
+// }

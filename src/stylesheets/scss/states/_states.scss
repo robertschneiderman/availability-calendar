@@ -1,0 +1,43 @@
+// %is-active--block {
+// 	@include mq(medium) {	
+// 		display: none;
+// 		&.is-active {
+// 			display: block;
+// 		}				
+// 	}
+// }
+// %is-active--inlblk {
+// 	@include mq(medium) {	
+// 		display: none;
+// 		&.is-active {
+// 			display: inline-block;
+// 		}				
+// 	}
+// }
+
+
+
+// %hidden-sm--block {
+// 	display: none;
+// 	@include mq(medium) {
+// 		display: block;
+// 	}
+// }
+// %hidden-sm--inlblk {
+// 	display: none;
+// 	@include mq(medium) {
+// 		display: inline-block;
+// 	}
+// }
+
+
+
+.is-visible {
+	display: block;
+}
+// .hidden-sm--block {
+// 	@extend %hidden-sm--block;
+// }
+// .hidden-sm--inlblk {
+// 	@extend %hidden-sm--inlblk;
+// }

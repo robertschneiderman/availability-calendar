@@ -1,0 +1,111 @@
+.navbar-nav {
+	display: inline-block;	
+	text-align: left;
+	width: 100%;	
+	z-index: 10;
+	&.mb {
+		margin-bottom: 1em;
+		@include hr-linesH($q: after, $c-or-b: #bbb, $w: 120%, $h: 1px, $p: 0px, $noJ: null)
+	}
+	&__item {
+		font-size: 1rem;
+		display: inline-block;
+		>a {
+			color: #fff;
+			display: inline-block;
+		    font-size: 1em;
+		    font-weight: 400;
+		}		
+	}
+	@include mq(small) {
+		&__item {
+			display: block;
+			padding: 0px;
+			margin: 0px;
+			>a {
+				border-bottom: 1px solid #222;
+				padding: 1.8em 0 1.8em 2em;
+				text-transform: uppercase;	
+				width: 100%;			
+			}		
+		}		
+	}
+	@include mq(medium) {
+		&__item {		
+			display: inline-block;
+			margin-right: 3.8em;
+			padding: .9em 0;
+			&:last-child {
+				margin-right: 0;			
+			}
+			>a {
+				line-height: 1;
+				z-index: 11;				
+			}
+		}		
+	}	
+}
+
+.navbar-nav__item > a {
+	@include mq(small) {
+		&:hover, &.is-active {
+			color: $color-primary;
+		}
+		&:hover:not(.is-active) {
+			background-color: darken(#333, 5%);					
+		}
+	}
+	@include mq(medium) {
+		&:hover, &.is-active {
+			color: #eee;
+			&:before {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+		&:hover {
+			@include tooltip;
+		}		
+	}	
+}
+
+.navbar-nav__item:hover {
+	.dropdown {
+		display: block;		
+	}
+}
+
+.footer-nav {
+	display: inline-block;
+	margin-bottom: 1.7em;
+	@include hr-linesH($q: after, $c-or-b: #aaa, $w: 120%, $h: 1px, $p: -15px, $noJ: null);
+	&__item {
+		font-size: 1rem;
+		display: inline-block;
+		>a {
+			color: #fff;
+			display: inline-block;
+		    font-size: 1em;
+		    font-weight: 500;
+		    &:hover {
+		    	color: $color-highlight;
+		    }
+		}		
+	}
+	@include mq(small) {
+		&__item {
+			display: block;
+			padding: 0px;
+			margin: 0px;		
+		}		
+	}
+	@include mq(medium) {
+		&__item {		
+			display: inline-block;
+			margin-right: 3.8em;
+			&:last-child {
+				margin-right: 0;			
+			}
+		}		
+	}		
+}

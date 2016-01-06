@@ -1,0 +1,141 @@
+// %slide-show-controller {
+// 	@include vc();
+// 	color: #aaa;
+// 	position: absolute;	
+// 	font-size: 4em;		
+// }
+// %carousel-controller {
+// 	position: absolute;
+// 	top: 50%;
+// 	// left: 0;
+// 	// bottom: 0;
+// 	text-align: center;
+// 	@extend %hidden-sm--inlblk;
+// 	vertical-align: middle;
+
+// }
+// .carousel {
+// 	font-size: 1rem;
+// 	@extend %container-justified;
+// 	max-width: none;
+// 	width: 100%;
+// 	text-align: center;
+// 	@include e(control) {
+// 		@extend %carousel-controller;
+// 		@include m(left) {
+// 			@extend %carousel-controller;
+// 			left: 50px;
+// 		}
+// 		@include m(right) {
+// 			@extend %carousel-controller;	
+// 			right: 50px;				
+// 		}		
+// 	}
+// 	@include e(slides) {
+// 		@extend %inlblk-child--vc;
+// 		// max-width: 900px;
+// 		// margin: 0 5%;
+// 		margin: 0 auto 0;		
+// 		overflow: hidden;
+// 		// width: 80%;	
+// 		> .is-active,
+// 		> .next,
+// 		> .prev {
+// 			display: block;
+// 		}
+
+// 		> .is-active {
+// 			// left: 0;
+// 		}
+
+// 		> .next,
+// 		> .prev {
+// 			position: absolute;
+// 			top: 0;
+// 			// width: 100%;
+// 		}
+
+// 		> .next {
+// 			// left: 100%;
+// 		}
+// 		> .prev {
+// 			// left: -100%;
+// 		}
+// 		> .next.left,
+// 		> .prev.right {
+// 			// left: 0;
+// 		}
+
+// 		> .is-active.left {
+// 			// left: -100%;
+// 		}
+// 		> .is-active.right {
+// 			// left: 100%;
+// 		}			
+// 	}
+// }
+
+// .slide {
+//     // transition: .6s ease-in-out left;
+//     display: none;
+// 	background-color: #fff;
+// 	// padding: 2em 3em;   
+// 	width: 80%;
+// 	margin: 0 auto;
+// 	// position: absolute;
+// 	@include hc();
+// 	// @extend %is-active--block;
+// 	// @media all and (transform-3d) {
+// 		transition: transform 0.6s ease-in-out;
+// 		backface-visibility: hidden;
+// 		perspective: 1000;	
+
+// 		&.next,
+// 		&.is-active.right {
+// 			transform: translate3d(80%, 0, 0);
+// 			left: 0;
+// 		}
+// 		&.prev,
+// 		&.is-active.left {
+// 			transform: translate3d(-80%, 0, 0);
+// 			left: 0;
+// 		}
+// 		&.next.left,
+// 		&.prev.right,
+// 		&.is-active {
+// 			transform: translate3d(0, 0, 0);
+// 			left: 0;
+// 		}			
+// 	// }			
+
+// 	@include e(img) {
+// 		@extend %inlblk-child--vc;			
+// 		@include mq(medium) {
+// 			margin-right: 4%;
+// 			width: 29%;
+// 		}
+// 	}
+// 	@include e(text) {
+// 		@extend %inlblk-child--vc;			
+// 		@include mq(medium) {
+// 			width: 63%;
+// 		}			
+// 	}
+// }
+
+// .slide {
+// 	@extend %is-active--block;	
+// 	@include e(img) {
+// 		@extend %inlblk-child--vc;			
+// 		@include mq(medium) {
+// 			margin-right: 4%;
+// 			width: 29%;
+// 		}
+// 	}
+// 	@include e(text) {
+// 		@extend %inlblk-child--vc;			
+// 		@include mq(medium) {
+// 			width: 63%;
+// 		}			
+// 	}	
+// }

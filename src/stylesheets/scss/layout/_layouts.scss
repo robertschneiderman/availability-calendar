@@ -1,0 +1,22 @@
+.l-landing {
+	// @include bgi('landing');	
+	@include bgi('landing', rgba(#444, .5));
+	// @extend %clearfix;
+	&__main {
+		// float: left;
+		display: inline-block;
+		vertical-align: middle;
+/* 		padding: 9em 0 0; */
+		width: 82%
+	}
+	&__sidebar {
+		// float: right;
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		padding: 2.6em .5em;
+		width: 18%;
+		background: rgba(0,0,0,0.30);
+		text-align: center;		
+	}
+}

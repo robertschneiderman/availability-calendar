@@ -1,0 +1,58 @@
+.poster {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1154px;
+	@include mq(small) {		
+		max-width: 530px;
+		padding: 0 5%;	
+		&__img {
+			margin-bottom: 1em;
+		}
+		&__content {
+			height: 100%;
+			&.landing {
+				// @include bgi('landing', rgba(#eee, .9));
+			}
+			&.about-us {
+				@include bgi('about-us', rgba(#eee, .9));
+			}
+			&.pt {
+				padding-top: 5em;
+			}
+		}				
+	}
+	@include mq(medium) {
+		padding: 0 2%;	
+		&__img {
+		 	display: inline-block;
+		 	vertical-align: middle;	
+			width: 46.3%;
+			&.landing {
+				@include bgi('landing');
+			}
+			&.about-us {
+				@include bgi('about-us');
+			}
+			&.ml {
+				margin-left: 4%;
+			}			
+			&.mr {
+				margin-right: 4%;
+			}
+		}
+		&__content {
+			display: inline-block;
+			vertical-align: middle;			
+			padding: 0 2%;
+			width: 48.7%;
+		}		
+	}	
+}
+
+.logo {
+	// position: absolute;
+	// top: -8em;
+	@include svg(198, 125, 250px);
+	display: block;
+	margin: 0 auto 3.5em;
+}

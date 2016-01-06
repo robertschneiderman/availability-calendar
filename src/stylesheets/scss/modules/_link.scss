@@ -1,0 +1,31 @@
+.link--more-info {
+	color: #999;
+	display: inline-block;
+	font-family: $font-family--secondary;
+	font-size: .8em;	
+	margin: 1.5em 0;
+	text-decoration: underline;
+	@include hc();
+	&:hover {
+		color: $color-highlight;
+	}
+}
+
+.link--read-more {
+	// @include hc;
+	// border: 1px solid #888;
+	border-radius: 20px;
+	color: #888;
+	display: inline-block;
+	font-family: $font-family--secondary;	
+	font-size: .9em * .9;
+	// margin: 0 auto;
+	// padding: .2em * .9 .6em * .9;
+	font-weight: 400;
+	// @include hr-linesH($q: after, $c-or-b: #aaa, $w: 100%, $h: 1px, $p: -3px, $noJ: null);
+	&:hover {
+		// border: 1px solid $color-highlight;		
+		color: $color-highlight;
+		// @include hr-linesH($q: after, $c-or-b: $color-highlight, $w: 100%, $h: 1px, $p: -3px, $noJ: null);		
+	}
+}

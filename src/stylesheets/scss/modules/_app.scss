@@ -1,0 +1,104 @@
+.heading {
+	margin-bottom: 4em;
+
+	text-align: center;	
+	// text-align: left;
+	&__main {
+		font-size: 3em;
+	}
+	&__sub {
+		font-size: 1em;
+	}
+}
+
+.app {
+	@extend %clearfix;
+
+}
+.calendar {
+	float: left;
+    width: 75%;
+    tr {
+    	width: 100%;
+    }
+    th, td {
+    	width: 13%; //14.285%
+    }
+    th, td {
+    	margin-right: 1.285%;
+    	&:last-child {
+    		margin-right: 0;
+    	}
+    }
+}
+
+.week {
+    margin: 0 auto;
+    padding: 2rem 0;
+	>.day {
+		background-color: #eee;
+		cursor: pointer;
+		font-size: 1.8em;
+		// float: left;
+		// margin: 0 0.5%;
+		padding: .3em;
+		text-align: center;
+		// width: 8.28%;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}    
+}
+
+.panel {
+	background-color: #f2f2f2;	
+	float: right;
+	min-height: 551.5px;
+	padding: .8em 0;	
+	width: 25%;
+}
+
+.time {
+	cursor: pointer;	
+	display: block;
+	float: left;
+	padding: .8em 0;
+	text-align: center;
+	width: 50%;
+	&__text {
+		padding: .3em;
+	}
+	&.is-active {
+		.time__text {
+			background-color: #77A6E0;
+			border-radius: 5px;
+			color: #fff;
+		}
+	}	
+}
+
+
+// .calendar {
+//     margin: 0 auto;
+//     padding: 2rem 0;
+//     width: 85%;
+// 	font-size: 0;
+// 	text-align: justify;
+// 	text-justify: distribute-all-lines;
+// 	&:after{
+// 		content: '';
+// 	  	display: inline-block;
+// 	  	font-size:0;
+// 	  	height: 0;  	
+// 		line-height:0;
+// 	  	width: 100%;  	
+// 	}	
+// }
+
+// .box {
+//     display: inline-block;
+//     vertical-align: middle;
+// }
